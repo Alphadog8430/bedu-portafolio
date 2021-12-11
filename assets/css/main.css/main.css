@@ -2,26 +2,41 @@ body{
     margin: 0;
     
 }
-nav{
-    background-color: burlywood;
+nav{   
     height: 50px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     padding: 20px 15px;
+    background-color: rgb(87, 90, 221);
 }
 
-nav a{color: crimson;
-    text-decoration: darkgreen;
+nav a{color: rgb(206, 223, 204);
+    text-decoration: rgb(225, 238, 225);
 }
 
 #logo-home{
     height: 30px;
 }
 
-  
+#hero-home{
+    height: 400px;
+    width: 100%;
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-home img{
+    width: 50%;
+    height: 300px;
+}
+
 .mr-md{
     margin-right: 20px;
 }
