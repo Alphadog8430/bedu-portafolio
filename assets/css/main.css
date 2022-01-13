@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    }
+    .container {
+        background-image: url("");
+        border: 2px solid rgb(200, 255, 0);
+     
+    }
+
+nav{   
+    height: 50px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 20px 16px;
+    background-color: rgb(87, 90, 221);    
+}
+
+nav a{color: rgb(206, 223, 204);
+    text-decoration: none;
+}
+
+#logo-home{
+    height: 30px;
+}
+
+#hero-home{
+    height: 400px;
+    width: 100%;
+    background-image: url(assets/background/Halo-Infinite.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-position: bottom;    
+}
+
+#hero-home img{
+    width: 45%;
+    height: 300px;
+}
+
+#grid-example{
+    display: flex;
+    flex-direction: column;
+}
+
+#grid-container{
+    display: grid;
+    background-color: green;
+  
+    grid-template-columns: 100px 100px ;
+    grid-template-rows: 100px 100px ;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+ 
+  #grid-container div{
+    background-color: rgb(148, 164, 235);
+    border-radius: 20px;
+    border: solid black 2px;
+    text-align: center;
+  
+    display: flex;
+    align-items: center;
+  }
+
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#logo-home{
+    height: 30px;
+}
+
+.mr-md{
+    margin-right: 20px;
+}
+
+.contenedor-padre{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+  }
+  
+  .contenedor-hijo{
+    width: 50%;
+    height: 250px;
+    background-color: green;
+  }
+  
+  /*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    nav{
+      justify-content: center;
+    }
+  
+    #hero-home{
+      flex-direction: column-reverse;
+    }
+  
+    #hero-home img{
+      width: 30%;
+      height: 50%;
+    }
+  
+    .text-hero{
+      text-align:center;
+    }
+  
+    .contenedor-hijo{
+      width: 70%;
+      height: 200px;
+      background-color: green;
+    }
+  
+    .display-none{
+      display: none;
+    }
+  
+  
+  }
